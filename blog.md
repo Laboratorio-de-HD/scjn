@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <div style="margin-bottom: 2rem;">
-  <a href="{{ '/' | relative_url }}">← Return to Home</a>
+  <a href="{{ '/' | relative_url }}">← Regresar</a>
 </div>
 
 <article class="post">
