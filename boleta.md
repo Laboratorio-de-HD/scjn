@@ -17,6 +17,3 @@ interviewed: true
   <p><img src="https://centralelectoral.ine.mx/wp-content/uploads/2025/04/1-BOLETA-MINISTROS-AS-CARTA-1_page-0001-500x370.jpg" alt="Boleta electoral" /></p>
 </div>
 
-<div style="margin-bottom: 2rem;">
-  <a href="{{ '/' | relative_url }}">← Regresar</a>
-</div> 
