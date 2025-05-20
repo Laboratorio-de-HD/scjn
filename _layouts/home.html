@@ -131,11 +131,14 @@ layout: default
     {% if post.layout == "candidato" %}
     <div class="candidate-card">
       <h2>
-        {% if post.external_url %}
-          <a href="{{ post.external_url }}" target="_blank">{{ post.title }}</a>
+        {% if post.interviewed %}
+          {% if post.external_url %}
+            <a href="{{ post.external_url }}" target="_blank">{{ post.title }}</a>
+          {% else %}
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% endif %}
         {% else %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endif %}
+          <span style="color: #4a5fc1; cursor: not-allowed; opacity: 0.7; text-decoration: none;">{{ post.title }}</span>
       </h2>
       <div class="candidate-meta">
         {% if post.number %}{{ post.number }}{% endif %}
